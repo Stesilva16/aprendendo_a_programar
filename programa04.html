@@ -1,0 +1,44 @@
+<canvas width="600" height="400"></canvas>
+
+<script>
+    var tela = document.querySelector('canvas');
+    var pincel = tela.getContext('2d');
+
+    pincel.fillStyle = 'lightgray';
+    pincel.fillRect(0, 0, 600, 400);
+
+    function desenhaCirculo(x, y, raio){
+
+        pincel.fillStyle = 'blue';
+        pincel.beginPath();
+        pincel.arc(x, y, raio, 0, 2 * Math.PI);
+        pincel.fill();
+    }
+
+    function limpaTela(){
+        pincel.clearRect(0, 0, 600, 400);
+    }
+    var x=20
+    function atualizaTela(){
+        limpaTela();
+        desenhaCirculo(x, 20, 10);
+        x++;
+    }
+
+    setInterval(atualizaTela,20);
+
+
+//vamos animar a bolinha 
+//aqui é para limpar e não ficar a parecendo a como um monte de bolinha cheia (pincel.clearRect(0, 0, 600, 400));
+//mensagem seja exibida com intervalos de tempo. Para isso, utilizaremos a função setInterval. Ela aceita receber, como parâmetro, a função que você deseja chamar e, depois, a quantidade de tempo que desejamos dar de intervalo em milissegundos. Utilizaremos 1000 milissegundos, que equivalem a 1 segundo;
+/*Recapitulando:
+
+O método setInterval() chama atualizaTela();
+Este, quando executado, faz o limpaTela(), desenhaCirculo() e incrementa o valor de x;
+O setInterval() aguarda 20 milisegundos, para repetir o processo, sempre incrementando o valor de x, o que faz com que nossa esfera "se mova" para a direita.
+Esta lógica é fundamental quando pensamos em animações, ou mesmo em criar jogos. Vamos para os exercícios!*/
+        
+
+    
+
+</script>
