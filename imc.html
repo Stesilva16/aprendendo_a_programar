@@ -1,0 +1,82 @@
+
+<meta charset="UTF-8">
+
+<script>
+    
+    function pulaLinha(){
+
+    	document.write("<br>");
+    	document.write("<br>");
+    }
+
+    function mostra(frase){
+
+    	document.write(frase);
+    	 pulaLinha();
+    }
+
+    function calcularImc(peso1,altura1,peso2,altura2){
+    	
+    	var imc1 = peso1 / (altura1 * altura1);
+    	var imc2 = peso2 / (altura2 * altura2);
+    	var imcTotal = imc1 + imc2;
+    	mostra (" O imc calculado é:" + imcTotal);
+    }
+
+    var pesoFlavio = 73;
+    var alturaFlavio = 1.71;
+
+    calcularImc(73,1.71,68,1.72);
+
+    var pesoAmigo = 68;
+    var alturaAmigo = 1.72;
+
+
+//Em vez de espalharmos a fórmula do cálculo do IMC, criamos uma funcionalidade que está preparada - se passarmos primeiro a altura, e depois o peso - para calcular o IMC, e exibir o valor, por meio da função mostra().
+//para não ficarmos mudando, creiamos um faunção na qual colocamos os parametros em parenteses para que ele de certo e fique linkado;
+//você consegue colcar mais parametros, juntos; 
+
+
+</script>
+
+<meta charset="UTF-8">
+
+<script>
+    
+    function pulaLinha(){
+
+    	document.write("<br>");
+    	document.write("<br>");
+    }
+
+    function mostra(frase){
+
+    	document.write(frase);
+    	 pulaLinha();
+    }
+
+    function calcularImc(peso1,altura1,peso2,altura2){
+    	
+    	var imc1 = peso1 / (altura1 * altura1);
+    	var imc2 = peso2 / (altura2 * altura2);
+    	var imcTotal = imc1 + imc2;
+    	mostra (" O imc calculado é:" + imcTotal);
+    }
+
+    var pesoFlavio = 73;
+    var alturaFlavio = 1.71;
+
+    calcularImc(73,1.71,68,1.72);
+
+    var pesoAmigo = 68;
+    var alturaAmigo = 1.72;
+
+    calcularImc(68,1.72);
+
+//Em vez de espalharmos a fórmula do cálculo do IMC, criamos uma funcionalidade que está preparada - se passarmos primeiro a altura, e depois o peso - para calcular o IMC, e exibir o valor, por meio da função mostra().
+//para não ficarmos mudando, creiamos um faunção na qual colocamos os parametros em parenteses para que ele de certo e fique linkado;
+//você consegue colcar mais parametros, juntos; 
+
+
+</script>
+

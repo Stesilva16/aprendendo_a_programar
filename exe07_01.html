@@ -1,0 +1,288 @@
+<meta charset="UTF-8">
+<script>
+
+    var loginCadastrado = "alura";
+    var senhaCadastrada = "alura321";
+
+    var maximoTentativas = 3;
+    var tentativaAtual = 1;
+
+    while(tentativaAtual <= maximoTentativas){
+
+    var loginInformado = prompt("Informe seu login");
+    var senhaInformada = prompt("Informe sua senha");
+
+    if( loginCadastrado == loginInformado && senhaCadastrada == senhaInformada ) {
+
+        alert("Bem-vindo ao sistema " + loginInformado);
+        
+        tentativaAtual = maximoTentativas;// acertou, então faço o gasto de todas as tentativas para sair do loop. Lá embaixo vai incrementar + 1! 
+
+    } else {
+
+        if (tentativaAtual == 3) {
+                alert("Número permitido de tentativas ultrapassado!");
+            } else {
+                alert("Login inválido. Tente novamente");
+            }
+        }
+
+       // vai para a próxima tentativa
+        tentativaAtual = tentativaAtual +1  
+    }
+//Em vez de usar tentativaAtual = tentativaAtual + 1 podemos utilizar tentativaAtual++ que é um atalho para quando queremos incrementar uma variável;
+//Isso nem chega perto da complexidade de criar um sistema de autenticação (login de usuários), mas brincar com o tema com certeza é um incentivo para que você continue no universo da programação;
+
+</script>
+
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+        document.write("<br>");
+}
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+}
+
+     var limite = parseInt(prompt( "Entre com um numero  limite:"));
+     var numeroPar = 2;
+
+     while(numeroPar <= limite) {
+
+     mostra(" Os numeros pares são :" + numeroPar);
+     numeroPar = numeroPar + 2;
+
+     }
+    
+    mostra("Fim");
+
+</script>
+
+
+<meta charset="UTF-8">
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var contador = 30;
+
+    while(contador <= 40) {
+
+        if( contador == 33 ) {
+        contador = contador + 1;
+        }
+        else if(contador == 37) {    
+            contador = contador + 1;
+        }
+        else {
+        mostra(contador);
+        contador = contador + 1; 
+        }
+      }
+
+    mostra("FIM");
+
+</script>
+
+<meta charset="UTF-8">
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var contador = 20;
+
+    while(contador >= 0) {
+
+        if( contador == 20 ) {
+        contador = contador - 1;
+        }
+        else {
+        mostra(contador);
+        contador = contador - 1; 
+        }
+      }
+
+    mostra("FIM");
+
+</script>
+
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+        document.write("<br>");
+}
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+}
+
+     var limite = parseInt(prompt( "Entre com um numero  limite:"));
+     var numeroPar = 2;
+
+     while(numeroPar <= limite) {
+
+     mostra(" Os numeros pares são :" + numeroPar);
+     numeroPar = numeroPar + 2;
+
+     }
+    
+    mostra("Fim");
+
+</script>
+
+
+<meta charset="UTF-8">
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var contador = 30;
+
+    while(contador <= 40) {
+
+        if( contador == 33 ) {
+        contador = contador + 1;
+        }
+        else if(contador == 37) {    
+            contador = contador + 1;
+        }
+        else {
+        mostra(contador);
+        contador = contador + 1; 
+        }
+      }
+
+    mostra("FIM");
+
+</script>
+
+<meta charset="UTF-8">
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var contador = 20;
+
+    while(contador >= 0) {
+
+        if( contador == 20 ) {
+        contador = contador - 1;
+        }
+        else {
+        mostra(contador);
+        contador = contador - 1; 
+        }
+      }
+
+    mostra("FIM");
+
+</script>
+
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+        document.write("<br>");
+}
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+}
+
+     var numeroPensado = Math.round(Math.random () *100 );
+
+     var chute = parseInt(prompt("Digite o seu chute!"));
+
+     if(chute == numeroPensado){
+
+        mostra("Você acertou!");
+     } else {
+
+        mostra("Você errou, o numero pensado foi " + numeroPensado);
+
+     }
+     //else ele não precisa você esccrever um if, por que for falsou ele já sabe que ele lê outro;
+     //console.log ele mostra no console da JavaScript no chorme qual numero ele pensou, para vocÊ analisar se esta certo; 
+     //Há a função Math.random(), que gera um número aleatório. Pressionando a tecla "Enter", ele gerou um número entre 0 e 1, e todas as vezes em que pressionarmos "Enter" surgirá um novo número. Entretanto, queremos que seja gerado um número entre 0 e 10.
+
+
+</script>
+
+<meta charset="UTF-8">
+
+<input/>
+<button>Compare com o meu segredo</button>
+
+<script>
+    
+    var segredo = Math.round(Math.random() * 10);
+    var input = document.querySelector("input");
+    input.focus();
+
+    function verifica() {
+      
+    
+    if(input.value == segredo){
+
+        alert("Você acertou!");
+    } else {
+
+        alert("Você errou!");
+        }
+
+        input.value = "";
+        imput.focus();
+    } 
+
+    var button = document.querySelector("button");
+    button.onclick = verifica;
+
+
+    
+
+//para você pegar algo do mundo do html para o mundo js, entõa usamos document.querySeletcot(" aqui entre aspass você link com aquilo que está fora");
+//Você aprendeu que através de document.write escrevemos na tela, mas o document sabe fazer mais coisas. É através de document.querySelector que podemos ir lá no mundo HTML e trazer o elemento para o mundo JavaScript para que possamos manipulá-lo. Mas cuidado, o correto é querySelector com S maiúsculo. Se por acaso você escrever com 's' minúsculo cometerá um erro de sintaxe.
+// O document.querySelector recebe um parâmetro o nome da tag que desejamos buscar do mundo HTML. Ele é mais poderoso do que você imagina e aceita receber outros tipos de parâmetros, mas para nosso treinamento, entender que se passarmos o nome de uma tag HTML ele nos devolverá a tag no mundo JavaScript é suficiente. Há outros jargões envolvidos nesse processo, mas não se preocupe. Você saberá todos eles se quiser continuar seus estudos na linguagem JavaScript.
+</script>
